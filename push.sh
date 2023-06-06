@@ -1,0 +1,13 @@
+#!/bin/bash
+LOCAL_USER=local
+LOCAL_IMAGE=oru-dgx
+LOCAL_TAG=latest
+
+REMOTE_USER=greenai2505
+REMOTE_IMAGE=oru-dgx
+REMOTE_TAG=torch-1.9.1
+
+
+docker tag $LOCAL_USER/$LOCAL_IMAGE:$LOCAL_TAG $REMOTE_USER/$REMOTE_IMAGE:$REMOTE_TAG
+docker login -u ${REMOTE_USER} docker.io
+docker push $REMOTE_USER/$REMOTE_IMAGE:$REMOTE_TAG

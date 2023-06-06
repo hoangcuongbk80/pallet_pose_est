@@ -1,5 +1,5 @@
 
-# pallet Pose Estimation
+# Pallet Pose Estimation
 
 Will be available after our paper has been published.
 

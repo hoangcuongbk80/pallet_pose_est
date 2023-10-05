@@ -10,7 +10,7 @@ for i in range(0, 40):
     seq = 10000 + i
     seq_str = str(seq)[1:]
     data_dir = 'data/' + seq_str + '/'
-    label_path = '/media/aass/783de628-b7ff-4217-8c96-7f3764de70d9/Warehouse_Dataset/' + data_dir
+    label_path = '/media/aass/783de628-b7ff-4217-8c96-7f3764de70d9/pallet_Dataset/' + data_dir
     label_addrs = glob.glob(label_path + '*-label.png')
     if seq_str in val:
         continue
